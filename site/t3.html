@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T3 Cam — TOMOS.io</title>
+  <meta name="description" content="T3 Cam: branded video conferencing for your practice. Coming soon.">
+  <link rel="icon" href="assets/img/logos/logo-tomos.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Syne:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <div class="logo-mark">
+        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 20h32M30 20v22" stroke="#fff" stroke-width="5.5" stroke-linecap="round"/>
+          <circle cx="43" cy="12" r="4.5" fill="#fff"/>
+        </svg>
+      </div>
+      <span class="logo-name">TOMOS</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#modules" data-i18n="common.nav.modules">Modules</a></li>
+      <li><a href="partner.html" class="nav-cta" data-i18n="common.nav.partner">Become a partner</a></li>
+    </ul>
+    <div class="lang-switch">
+      <button class="lang-btn" data-lang="fr">FR</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div style="max-width:1100px;margin:0 auto;">
+    <div class="hero">
+      <div class="hero-tag">
+        <span class="hero-dot"></span>
+        T3 · Cam
+      </div>
+      <h1 data-i18n="t3.hero.title">Branded video calls,<br><span class="muted">coming soon.</span></h1>
+      <p class="hero-sub" data-i18n="t3.hero.sub">T3 Cam will bring fully white-label video conferencing to your practice — HD calls, your identity, no third-party branding visible to your clients.</p>
+      <div class="hero-actions">
+        <a href="mailto:contact@tomos.io?subject=T3%20Cam%20-%20Notify%20me" class="btn-primary" data-i18n="t3.hero.ctaPrimary">Notify me at launch →</a>
+        <a href="index.html#modules" class="btn-secondary" data-i18n="t3.hero.ctaSecondary">Back to modules</a>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <section>
+    <div class="soon-box">
+      <div class="module-number">T3</div>
+      <h2 data-i18n="t3.soon.title">In development</h2>
+      <p class="section-sub" style="margin:0 auto 2rem;" data-i18n="t3.soon.sub">T3 Cam is on our roadmap: HD video and audio calls, fully branded with your identity, simple meeting links for your clients — no third-party branding visible.</p>
+      <a href="mailto:contact@tomos.io?subject=T3%20Cam%20-%20Notify%20me" class="btn-primary" data-i18n="t3.soon.cta">Get notified when it's ready →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-copy" data-i18n="common.footer.copy">© 2026 TOMOS PSA — All rights reserved.</span>
+    <ul class="footer-links">
+      <li><a href="index.html#modules" data-i18n="common.nav.modules">Modules</a></li>
+      <li><a href="partner.html" data-i18n="common.footer.partner">Partner program</a></li>
+      <li><a href="mailto:contact@tomos.io" data-i18n="common.footer.contact">Contact</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    window.I18N = {
+      fr: {
+        common: {
+          nav: { modules: "Modules", partner: "Devenir partenaire" },
+          footer: { copy: "© 2026 TOMOS PSA — Tous droits réservés.", partner: "Programme partenaire", contact: "Contact" }
+        },
+        t3: {
+          hero: {
+            title: "Appels vidéo en marque blanche,<br><span class=\"muted\">bientôt disponibles.</span>",
+            sub: "T3 Cam apportera une visioconférence entièrement en marque blanche à votre cabinet — appels HD, votre identité, aucune marque tierce visible pour vos clients.",
+            ctaPrimary: "Être notifié au lancement →",
+            ctaSecondary: "Retour aux modules"
+          },
+          soon: {
+            title: "En développement",
+            sub: "T3 Cam est sur notre feuille de route : appels vidéo et audio HD, entièrement personnalisé à votre identité, liens de réunion simples pour vos clients — aucune marque tierce visible.",
+            cta: "Être notifié dès que c'est prêt →"
+          }
+        }
+      },
+      en: {
+        common: {
+          nav: { modules: "Modules", partner: "Become a partner" },
+          footer: { copy: "© 2026 TOMOS PSA — All rights reserved.", partner: "Partner program", contact: "Contact" }
+        },
+        t3: {
+          hero: {
+            title: "Branded video calls,<br><span class=\"muted\">coming soon.</span>",
+            sub: "T3 Cam will bring fully white-label video conferencing to your practice — HD calls, your identity, no third-party branding visible to your clients.",
+            ctaPrimary: "Notify me at launch →",
+            ctaSecondary: "Back to modules"
+          },
+          soon: {
+            title: "In development",
+            sub: "T3 Cam is on our roadmap: HD video and audio calls, fully branded with your identity, simple meeting links for your clients — no third-party branding visible.",
+            cta: "Get notified when it's ready →"
+          }
+        }
+      }
+    };
+  </script>
+  <script src="assets/js/i18n.js"></script>
+</body>
+</html>

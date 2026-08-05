@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="690.998" height="690.998" viewBox="0 0 690.998 690.998">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#707070"/>
+      <stop offset="1" stop-color="#212020"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_4925" data-name="Group 4925" transform="translate(-220.479 -190.211)" style="isolation: isolate">
+    <g id="Group_4340" data-name="Group 4340" transform="translate(220.479 190.211)">
+      <circle id="Ellipse_45" data-name="Ellipse 45" cx="345.499" cy="345.499" r="345.499" fill="url(#linear-gradient)"/>
+      <path id="Path_39632" data-name="Path 39632" d="M105.433-10.124H74.33V92.112q0,8.832-3.936,13.1a13.2,13.2,0,0,1-10.176,4.272,13.4,13.4,0,0,1-10.32-4.32q-3.984-4.32-3.984-13.055V-10.124h-31.1q-7.3,0-10.848-3.216a10.91,10.91,0,0,1-3.552-8.5,10.784,10.784,0,0,1,3.7-8.64q3.7-3.168,10.7-3.168h90.621q7.392,0,10.992,3.264a10.988,10.988,0,0,1,3.6,8.544,10.774,10.774,0,0,1-3.648,8.5Q112.729-10.124,105.433-10.124Z" transform="translate(285.277 307.576)" fill="#fff"/>
+      <rect id="Rectangle_1539" data-name="Rectangle 1539" width="29.307" height="29.307" rx="14.653" transform="translate(422.952 228.662)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

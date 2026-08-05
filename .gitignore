@@ -1,0 +1,13 @@
+# Only the deployable static site (site/) is tracked in this repo.
+# Everything else here is source material (pitch decks, raw exports) that
+# should not be pushed to GitHub / Hostinger.
+
+*
+
+!site/
+!site/**
+!.gitignore
+!README.md
+
+.DS_Store
+**/.DS_Store
