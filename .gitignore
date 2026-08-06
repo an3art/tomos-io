@@ -1,11 +1,18 @@
-# Only the deployable static site (site/) is tracked in this repo.
-# Everything else here is source material (pitch decks, raw exports) that
-# should not be pushed to GitHub / Hostinger.
+# Only the deployable static site lives at repo root — flat, so Hostinger's
+# Git deploy can drop it straight into public_html/ with an empty install path.
+# Everything else in this Dropbox folder (pitch decks, raw exports) is
+# source material and must never be pushed to GitHub / Hostinger.
 
 *
 
-!site/
-!site/**
+!index.html
+!partner.html
+!t1.html
+!t2.html
+!t3.html
+!t4.html
+!assets/
+!assets/**
 !.gitignore
 !README.md
 
