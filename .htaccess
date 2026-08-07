@@ -1,0 +1,11 @@
+# Temporary holding redirect — remove this block once the new site is ready to launch.
+# Sends all traffic to /soon/, except the pages that must stay live:
+# /soon itself (avoid a redirect loop), /assets (so /soon/ can load the logo),
+# and the App Store–required T1 Expenses pages (/privacy-policy, /delete-account, /t1).
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^/soon
+RewriteCond %{REQUEST_URI} !^/assets
+RewriteCond %{REQUEST_URI} !^/privacy-policy
+RewriteCond %{REQUEST_URI} !^/delete-account
+RewriteCond %{REQUEST_URI} !^/t1
+RewriteRule ^(.*)$ /soon/ [R=302,L]

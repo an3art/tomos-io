@@ -15,6 +15,7 @@
 !assets/**
 !soon/
 !soon/**
+!.htaccess
 !.gitignore
 !README.md
 
