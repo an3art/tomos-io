@@ -13,6 +13,8 @@
 !t4.html
 !assets/
 !assets/**
+!soon/
+!soon/**
 !.gitignore
 !README.md
 

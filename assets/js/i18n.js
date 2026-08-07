@@ -47,6 +47,33 @@
       b.addEventListener('click', function () { applyLang(b.dataset.lang); });
     });
 
+    var navEl = document.querySelector('nav');
+    if (navEl) {
+      var toggleNavBg = function () {
+        navEl.classList.toggle('scrolled', window.scrollY > 20);
+      };
+      toggleNavBg();
+      window.addEventListener('scroll', toggleNavBg, { passive: true });
+    }
+
+    var heroBg = document.querySelector('.hero-bg-parallax');
+    var heroSectionEl = document.querySelector('.hero-section');
+    if (heroBg) {
+      var sizeHeroBg = function () {
+        var minHeight = window.innerHeight * 0.5;
+        var heroHeight = heroSectionEl ? heroSectionEl.offsetHeight : 0;
+        heroBg.style.height = Math.max(heroHeight, minHeight) + 'px';
+      };
+      var moveHeroBg = function () {
+        heroBg.style.transform = 'translateY(' + (window.scrollY * 0.3) + 'px)';
+      };
+      sizeHeroBg();
+      moveHeroBg();
+      window.addEventListener('load', sizeHeroBg);
+      window.addEventListener('resize', sizeHeroBg);
+      window.addEventListener('scroll', moveHeroBg, { passive: true });
+    }
+
     document.querySelectorAll('.faq-item').forEach(function (item) {
       var q = item.querySelector('.faq-question');
       var a = item.querySelector('.faq-answer');

@@ -8,22 +8,19 @@
   <link rel="icon" href="assets/img/logos/logo-tomos.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Syne:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Viga&family=Syne:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=7">
 </head>
 <body>
 
+  <div class="hero-bg-parallax"></div>
+
   <!-- NAV -->
-  <nav>
     <a href="index.html" class="nav-logo">
-      <div class="logo-mark">
-        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M14 20h32M30 20v22" stroke="#fff" stroke-width="5.5" stroke-linecap="round"/>
-          <circle cx="43" cy="12" r="4.5" fill="#fff"/>
-        </svg>
-      </div>
+      <img src="assets/img/logos/logo-tomos.svg" alt="TOMOS" class="logo-mark">
       <span class="logo-name">TOMOS</span>
     </a>
+  <nav>
     <ul class="nav-links">
       <li><a href="#modules" data-i18n="common.nav.modules">Modules</a></li>
       <li><a href="#how" data-i18n="common.nav.how">How it works</a></li>
@@ -37,39 +34,70 @@
   </nav>
 
   <!-- HERO -->
-  <div style="max-width:1100px;margin:0 auto;">
+  <div class="hero-section">
     <div class="hero">
-      <div class="hero-tag">
-        <span class="hero-dot"></span>
-        <span data-i18n="index.hero.tag">For reseller partners</span>
-      </div>
-      <h1 data-i18n="index.hero.title">Monetize<br><span class="muted">your expertise.</span></h1>
-      <p class="hero-sub" data-i18n="index.hero.sub">TOMOS is modular SaaS infrastructure — think Lego blocks — that accounting firms, consultants, and advisory professionals assemble, brand as their own, and sell to their clients.</p>
-      <div class="hero-actions">
-        <a href="partner.html" class="btn-primary" data-i18n="index.hero.ctaPrimary">Become a partner →</a>
-        <a href="#how" class="btn-secondary" data-i18n="index.hero.ctaSecondary">See how it works</a>
-      </div>
-      <p class="hero-note" data-i18n="index.hero.note">No developers. No infrastructure. No upfront investment.</p>
-    </div>
-  </div>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="hero-tag">
+            <span class="hero-dot"></span>
+            <span data-i18n="index.hero.tag">For accounting firms</span>
+          </div>
+          <h1 data-i18n="index.hero.title">Monetize your expertise<br><span class="muted">in 30 days.</span></h1>
+          <p class="hero-sub" data-i18n="index.hero.sub">TOMOS is modular SaaS infrastructure that accounting firms, consultants, and advisory professionals assemble, brand as their own, and sell to their clients.</p>
+          <div class="hero-actions">
+            <a href="partner.html" class="btn-primary" data-i18n="index.hero.ctaPrimary">Book a demo →</a>
+            <a href="#how" class="btn-secondary" data-i18n="index.hero.ctaSecondary">See how it works</a>
+          </div>
+          <ul class="hero-checklist">
+            <li><span class="check-dot"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-i18n="index.hero.check1">No developers</span></li>
+            <li><span class="check-dot"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-i18n="index.hero.check2">No infrastructure</span></li>
+            <li><span class="check-dot"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-i18n="index.hero.check3">No upfront investment</span></li>
+          </ul>
+        </div>
 
-  <!-- PROOF BAR -->
-  <div class="proof-bar">
-    <div class="proof-item">
-      <div class="proof-icon"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      <span data-i18n="index.proof.item1">No technical team required</span>
-    </div>
-    <div class="proof-item">
-      <div class="proof-icon"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      <span data-i18n="index.proof.item2">Your brand, your pricing</span>
-    </div>
-    <div class="proof-item">
-      <div class="proof-icon"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      <span data-i18n="index.proof.item3">Live in weeks, not months</span>
-    </div>
-    <div class="proof-item">
-      <div class="proof-icon"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      <span data-i18n="index.proof.item4">AI-powered from day one</span>
+        <div class="hero-visual">
+          <div class="diagram-panel">
+            <svg class="node-diagram" viewBox="0 0 800 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="T1, T2, T3 and T4 modules connecting into your branded product">
+              <path class="connector" d="M104,58 C220,58 220,169 460,169"/>
+              <path class="connector" d="M104,136 C260,136 260,169 460,169"/>
+              <path class="connector" d="M104,214 C260,214 260,169 460,169"/>
+              <path class="connector" d="M104,292 C220,292 220,169 460,169"/>
+              <circle class="connector-dot" cx="460" cy="169" r="4"/>
+
+              <g class="floating-brick" style="animation-delay:0s">
+                <circle class="connector-dot" cx="104" cy="58" r="4"/>
+                <rect x="47" y="16" width="22" height="14" rx="4" fill="var(--node-t1)"/>
+                <rect x="75" y="16" width="22" height="14" rx="4" fill="var(--node-t1)"/>
+                <rect x="40" y="26" width="64" height="64" rx="10" fill="var(--node-t1)"/>
+              </g>
+
+              <g class="floating-brick" style="animation-delay:0.5s">
+                <circle class="connector-dot" cx="104" cy="136" r="4"/>
+                <rect x="47" y="94" width="22" height="14" rx="4" fill="var(--node-t2)"/>
+                <rect x="75" y="94" width="22" height="14" rx="4" fill="var(--node-t2)"/>
+                <rect x="40" y="104" width="64" height="64" rx="10" fill="var(--node-t2)"/>
+              </g>
+
+              <g class="floating-brick" style="animation-delay:1s">
+                <circle class="connector-dot" cx="104" cy="214" r="4"/>
+                <rect x="47" y="172" width="22" height="14" rx="4" fill="var(--node-t3)"/>
+                <rect x="75" y="172" width="22" height="14" rx="4" fill="var(--node-t3)"/>
+                <rect x="40" y="182" width="64" height="64" rx="10" fill="var(--node-t3)"/>
+              </g>
+
+              <g class="floating-brick" style="animation-delay:1.5s">
+                <circle class="connector-dot" cx="104" cy="292" r="4"/>
+                <rect x="47" y="250" width="22" height="14" rx="4" fill="var(--node-t4)"/>
+                <rect x="75" y="250" width="22" height="14" rx="4" fill="var(--node-t4)"/>
+                <rect x="40" y="260" width="64" height="64" rx="10" fill="var(--node-t4)"/>
+              </g>
+
+              <rect class="output-rect" x="470" y="119" width="290" height="100" rx="16"/>
+              <text class="output-title" x="615" y="180" font-size="28" text-anchor="middle" data-i18n="index.hero.diagramTitle">Your brand</text>
+            </svg>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -89,7 +117,7 @@
 
       <!-- T1 -->
       <div class="module-card">
-        <div class="module-number">T1</div>
+        <div class="module-number t1">T1</div>
         <div class="module-title">Expenses</div>
         <p class="module-desc" data-i18n="index.modules.t1.desc">AI-powered expense management. Your clients scan receipts, track spending, and export data — saving hours every month.</p>
         <ul class="module-features">
@@ -107,7 +135,7 @@
 
       <!-- T2 -->
       <div class="module-card">
-        <div class="module-number">T2</div>
+        <div class="module-number t2">T2</div>
         <div class="module-title">Invoicing</div>
         <p class="module-desc" data-i18n="index.modules.t2.desc">Online invoicing with e-invoice compliance. Built for the entrepreneurs and SMEs your clients already are.</p>
         <ul class="module-features">
@@ -125,7 +153,7 @@
 
       <!-- T3 -->
       <div class="module-card">
-        <div class="module-number">T3</div>
+        <div class="module-number t3">T3</div>
         <div class="module-title">Cam</div>
         <p class="module-desc" data-i18n="index.modules.t3.desc">Branded video conferencing for your practice. Keep all client interactions inside your own ecosystem.</p>
         <ul class="module-features">
@@ -143,7 +171,7 @@
 
       <!-- T4 -->
       <div class="module-card">
-        <div class="module-number">T4</div>
+        <div class="module-number t4">T4</div>
         <div class="module-title">Bot</div>
         <p class="module-desc" data-i18n="index.modules.t4.desc">An AI assistant trained on your knowledge base. Answers your clients' questions instantly, captures leads, and speaks in your voice.</p>
         <ul class="module-features">
@@ -275,18 +303,15 @@
         },
         index: {
           hero: {
-            tag: "Pour les partenaires revendeurs",
-            title: "Monétisez<br><span class=\"muted\">votre expertise.</span>",
-            sub: "TOMOS est une infrastructure SaaS modulaire — comme des briques Lego — que les experts-comptables, consultants et professionnels du conseil assemblent, personnalisent à leur marque, et revendent à leurs clients.",
-            ctaPrimary: "Devenir partenaire →",
+            tag: "Experts-comptables",
+            title: "Monétisez votre expertise<br><span class=\"muted\">en 30 jours.</span>",
+            sub: "TOMOS est une infrastructure SaaS modulaire que les experts-comptables, consultants et professionnels du conseil assemblent, personnalisent à leur marque, et revendent à leurs clients.",
+            ctaPrimary: "Réserver une démo →",
             ctaSecondary: "Voir comment ça marche",
-            note: "Pas de développeurs. Pas d'infrastructure. Pas d'investissement initial."
-          },
-          proof: {
-            item1: "Aucune équipe technique requise",
-            item2: "Votre marque, vos prix",
-            item3: "En ligne en quelques semaines",
-            item4: "Propulsé par l'IA dès le premier jour"
+            check1: "Pas de développeurs",
+            check2: "Pas d'infrastructure",
+            check3: "Pas d'investissement initial",
+            diagramTitle: "Votre marque"
           },
           modules: {
             label: "Les modules",
@@ -362,18 +387,15 @@
         },
         index: {
           hero: {
-            tag: "For reseller partners",
-            title: "Monetize<br><span class=\"muted\">your expertise.</span>",
-            sub: "TOMOS is modular SaaS infrastructure — think Lego blocks — that accounting firms, consultants, and advisory professionals assemble, brand as their own, and sell to their clients.",
-            ctaPrimary: "Become a partner →",
+            tag: "For accounting firms",
+            title: "Monetize your expertise<br><span class=\"muted\">in 30 days.</span>",
+            sub: "TOMOS is modular SaaS infrastructure that accounting firms, consultants, and advisory professionals assemble, brand as their own, and sell to their clients.",
+            ctaPrimary: "Book a demo →",
             ctaSecondary: "See how it works",
-            note: "No developers. No infrastructure. No upfront investment."
-          },
-          proof: {
-            item1: "No technical team required",
-            item2: "Your brand, your pricing",
-            item3: "Live in weeks, not months",
-            item4: "AI-powered from day one"
+            check1: "No developers",
+            check2: "No infrastructure",
+            check3: "No upfront investment",
+            diagramTitle: "Your brand"
           },
           modules: {
             label: "The modules",
@@ -444,6 +466,6 @@
       }
     };
   </script>
-  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/i18n.js?v=6"></script>
 </body>
 </html>
