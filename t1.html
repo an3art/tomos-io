@@ -9,9 +9,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Viga&family=Syne:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=7">
+  <link rel="stylesheet" href="assets/css/style.css?v=8">
 </head>
 <body>
+
+  <div class="hero-bg-parallax"></div>
 
   <!-- NAV -->
     <a href="index.html" class="nav-logo">
@@ -32,7 +34,7 @@
   </nav>
 
   <!-- HERO -->
-  <div style="max-width:1100px;margin:0 auto;">
+  <div class="hero-section">
     <div class="hero">
       <div class="hero-tag">
         <span class="hero-dot"></span>
@@ -67,32 +69,39 @@
       <p class="section-sub" data-i18n="t1.features.sub">Unlike traditional expense apps, T1 Expenses learns from your habits. The result: your clients save time, reduce errors, and gain crystal-clear financial visibility.</p>
     </div>
 
-    <div class="features-grid cols-3">
-      <div class="feature-card">
+    <div class="features-grid cols-3" style="--node-accent: var(--node-t1)">
+      <div class="node-feature-card">
+        <div class="node-icon">01</div>
         <div class="feature-title" data-i18n="t1.features.f1.title">Full frame scanning</div>
         <p class="feature-desc" data-i18n="t1.features.f1.desc">Capture multiple receipts in a row with the Scan menu.</p>
       </div>
-      <div class="feature-card">
+      <div class="node-feature-card">
+        <div class="node-icon">02</div>
         <div class="feature-title" data-i18n="t1.features.f2.title">Long receipt scanning</div>
         <p class="feature-desc" data-i18n="t1.features.f2.desc">Even endless receipts are split and analyzed automatically with Segments mode.</p>
       </div>
-      <div class="feature-card">
+      <div class="node-feature-card">
+        <div class="node-icon">03</div>
         <div class="feature-title" data-i18n="t1.features.f3.title">Manual entry included</div>
         <p class="feature-desc" data-i18n="t1.features.f3.desc">Add non-scanned receipts manually so nothing slips through the cracks.</p>
       </div>
-      <div class="feature-card">
+      <div class="node-feature-card">
+        <div class="node-icon">04</div>
         <div class="feature-title" data-i18n="t1.features.f4.title">Send by email</div>
         <p class="feature-desc" data-i18n="t1.features.f4.desc">Forward PDF expenses received by email to a dedicated you@t1.tomos.io address.</p>
       </div>
-      <div class="feature-card">
+      <div class="node-feature-card">
+        <div class="node-icon">05</div>
         <div class="feature-title" data-i18n="t1.features.f5.title">Smart insights</div>
         <p class="feature-desc" data-i18n="t1.features.f5.desc">AI highlights spending patterns, detects anomalies, and generates trends.</p>
       </div>
-      <div class="feature-card">
+      <div class="node-feature-card">
+        <div class="node-icon">06</div>
         <div class="feature-title" data-i18n="t1.features.f6.title">Search everything</div>
         <p class="feature-desc" data-i18n="t1.features.f6.desc">From merchant to line items, search through the contents of every receipt.</p>
       </div>
-      <div class="feature-card">
+      <div class="node-feature-card">
+        <div class="node-icon">07</div>
         <div class="feature-title" data-i18n="t1.features.f7.title">Export made simple</div>
         <p class="feature-desc" data-i18n="t1.features.f7.desc">Export data instantly and find any item or transaction in seconds.</p>
       </div>
@@ -341,6 +350,6 @@
       }
     };
   </script>
-  <script src="assets/js/i18n.js?v=6"></script>
+  <script src="assets/js/i18n.js?v=7"></script>
 </body>
 </html>
