@@ -74,6 +74,31 @@
       window.addEventListener('scroll', moveHeroBg, { passive: true });
     }
 
+    document.querySelectorAll('.feature-tour').forEach(function (tour) {
+      var tabs = tour.querySelectorAll('.feature-tab');
+      var textPanels = tour.querySelectorAll('.viewer-panel-text');
+      var visualPanels = tour.querySelectorAll('.viewer-panel-visual');
+      var tabsRow = tour.querySelector('.feature-tabs');
+      var leftArrow = tour.querySelector('.tab-arrow-left');
+      var rightArrow = tour.querySelector('.tab-arrow-right');
+
+      var activate = function (index) {
+        tabs.forEach(function (t, i) { t.classList.toggle('active', i === index); });
+        textPanels.forEach(function (p, i) { p.classList.toggle('active', i === index); });
+        visualPanels.forEach(function (p, i) { p.classList.toggle('active', i === index); });
+      };
+
+      tabs.forEach(function (tab, i) {
+        tab.addEventListener('click', function () {
+          activate(i);
+          tab.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+        });
+      });
+
+      if (leftArrow) leftArrow.addEventListener('click', function () { tabsRow.scrollBy({ left: -240, behavior: 'smooth' }); });
+      if (rightArrow) rightArrow.addEventListener('click', function () { tabsRow.scrollBy({ left: 240, behavior: 'smooth' }); });
+    });
+
     document.querySelectorAll('.faq-item').forEach(function (item) {
       var q = item.querySelector('.faq-question');
       var a = item.querySelector('.faq-answer');

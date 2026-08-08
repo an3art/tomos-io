@@ -892,74 +892,137 @@ footer {
 }
 .node-diagram .output-title { fill: var(--white); font-weight: 700; font-family: var(--font-display); }
 
-/* Feature cards presented as diagram nodes (product pages) */
-.features-grid.as-nodes {
-  background: transparent;
-  border: none;
-  gap: 1rem;
-}
+/* FEATURE TOUR — card strip (bottom) + viewer (top), Chrome "What's new"-style */
+.feature-tour { margin-top: 2.5rem; }
 
-.node-feature-card {
-  background: var(--white);
+.feature-viewer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  background: var(--surface-gray);
   border: 0.5px solid var(--border);
-  border-radius: 16px;
-  overflow: hidden;
+  border-radius: 20px;
+  padding: 3rem;
+  min-height: 340px;
+}
+
+.feature-viewer-text { position: relative; }
+
+.viewer-panel-text { display: none; }
+.viewer-panel-text.active { display: block; animation: viewerTextIn 0.35s ease forwards; }
+
+.viewer-panel-text .feature-title { font-size: 28px; margin-bottom: 0.85rem; }
+.viewer-panel-text .feature-desc { font-size: 15px; line-height: 1.65; max-width: 420px; }
+
+@keyframes viewerTextIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+
+.feature-viewer-media {
   position: relative;
-}
-
-.node-feature-body {
-  padding: 1.5rem;
-}
-
-.node-icon {
-  width: 30px;
-  height: 30px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-display);
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--white);
-  background: var(--node-accent, var(--brand-a));
-  margin-bottom: 1rem;
-}
-
-/* Large visual panel on top of each feature card — image or abstract number tile */
-.node-feature-visual {
-  aspect-ratio: 16 / 10;
+  border-radius: 14px;
   overflow: hidden;
-  background: var(--node-accent, var(--brand-a));
+  aspect-ratio: 4 / 3;
+  background: var(--white);
+  border: 0.5px solid var(--border-light);
+}
+
+.viewer-panel-visual { display: none; width: 100%; height: 100%; }
+.viewer-panel-visual.active {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: viewerImgIn 0.4s ease forwards;
 }
 
-.node-feature-visual img {
+.viewer-panel-visual img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.4s ease;
 }
 
-.node-feature-card:hover .node-feature-visual img {
-  transform: scale(1.05);
+.viewer-panel-visual.viewer-panel-num.active {
+  background: var(--node-accent, var(--brand-a));
 }
 
-.node-feature-num {
+.viewer-panel-num .feature-viewer-num {
   font-family: 'Viga', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 80px;
+  font-size: 96px;
   font-weight: 400;
   color: rgba(255,255,255,0.92);
   line-height: 1;
-  transition: transform 0.4s ease;
+  animation: kenBurns 7s ease-in-out infinite alternate;
 }
 
-.node-feature-card:hover .node-feature-num {
-  transform: scale(1.08);
+.viewer-panel-visual.active img {
+  animation: kenBurns 9s ease-in-out infinite alternate;
 }
+
+@keyframes viewerImgIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes kenBurns { from { transform: scale(1); } to { transform: scale(1.06); } }
+
+/* Card strip */
+.feature-tabs-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.feature-tabs {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 4px 2px;
+  scrollbar-width: none;
+}
+
+.feature-tabs::-webkit-scrollbar { display: none; }
+
+.feature-tab {
+  flex: 0 0 auto;
+  background: var(--white);
+  border: 0.5px solid var(--border);
+  border-radius: 12px;
+  padding: 0.85rem 1.15rem;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--mid-gray);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.feature-tab:hover { border-color: var(--node-accent, var(--brand-a)); }
+
+.feature-tab.active {
+  background: var(--node-accent, var(--brand-a));
+  border-color: transparent;
+  color: var(--white);
+}
+
+.tab-arrow {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 0.5px solid var(--border);
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-size: 15px;
+  color: var(--mid-gray);
+  transition: background 0.15s;
+}
+
+.tab-arrow:hover { background: var(--surface-gray); }
 
 /* Module accent tints — one distinct color per T1-T4, used on badges/icons */
 .module-number.t1 { color: var(--node-t1); border-color: rgba(46,125,91,0.35); background: rgba(46,125,91,0.08); }
@@ -976,6 +1039,7 @@ footer {
   .hero-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .hero-visual { order: 2; }
   .diagram-panel { padding: 1.25rem; }
+  .feature-viewer { grid-template-columns: 1fr; padding: 1.5rem; gap: 1.5rem; }
 }
 
 @media (max-width: 768px) {
