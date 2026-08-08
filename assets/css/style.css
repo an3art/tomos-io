@@ -902,20 +902,13 @@ footer {
 .node-feature-card {
   background: var(--white);
   border: 0.5px solid var(--border);
-  border-radius: 14px;
-  padding: 1.5rem;
+  border-radius: 16px;
+  overflow: hidden;
   position: relative;
 }
 
-.node-feature-card::before {
-  content: '';
-  position: absolute;
-  top: 1.5rem;
-  left: -1px;
-  width: 3px;
-  height: 22px;
-  border-radius: 2px;
-  background: var(--node-accent, var(--brand-a));
+.node-feature-body {
+  padding: 1.5rem;
 }
 
 .node-icon {
@@ -931,6 +924,41 @@ footer {
   color: var(--white);
   background: var(--node-accent, var(--brand-a));
   margin-bottom: 1rem;
+}
+
+/* Large visual panel on top of each feature card — image or abstract number tile */
+.node-feature-visual {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: var(--node-accent, var(--brand-a));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.node-feature-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.node-feature-card:hover .node-feature-visual img {
+  transform: scale(1.05);
+}
+
+.node-feature-num {
+  font-family: 'Viga', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.92);
+  line-height: 1;
+  transition: transform 0.4s ease;
+}
+
+.node-feature-card:hover .node-feature-num {
+  transform: scale(1.08);
 }
 
 /* Module accent tints — one distinct color per T1-T4, used on badges/icons */
