@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Viga&family=Syne:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=11">
+  <link rel="stylesheet" href="assets/css/style.css?v=13">
 </head>
 <body>
 
@@ -33,99 +33,83 @@
     </div>
   </nav>
 
-  <!-- HERO -->
-  <div class="hero-section">
+  <!-- HERO = FEATURE VIEWER -->
+  <div class="hero-section" id="features">
     <div class="hero">
       <div class="hero-tag">
         <span class="hero-dot"></span>
         T1 · Expenses
       </div>
-      <h1 data-i18n="t1.hero.title">Manage your expenses<br><span class="muted">in seconds. Powered by AI.</span></h1>
-      <p class="hero-sub" data-i18n="t1.hero.sub">T1 Expenses scans, analyzes, and organizes receipts, invoices, and vouchers with the power of artificial intelligence — white-labeled under your own brand.</p>
-      <div class="hero-actions">
-        <a href="mailto:contact@tomos.io?subject=Demo%20T1%20Expenses" class="btn-primary" data-i18n="t1.hero.ctaPrimary">Ask for a demo →</a>
-        <a href="index.html#modules" class="btn-secondary" data-i18n="t1.hero.ctaSecondary">Back to modules</a>
-      </div>
-      <div class="badge-row">
-        <span class="badge-pill" data-i18n="t1.hero.badge1">60 receipts free / month</span>
-        <span class="badge-pill" data-i18n="t1.hero.badge2">CSV / accounting export</span>
-        <span class="badge-pill" data-i18n="t1.hero.badge3">iOS &amp; Android apps</span>
-      </div>
-      <div class="hero-media">
-        <img src="assets/img/logos/header-t1.webp" alt="T1 Expenses" loading="lazy">
+
+      <div class="feature-tour hero-tour" style="--node-accent: var(--node-t1)">
+        <div class="feature-viewer">
+          <div class="feature-viewer-text">
+            <div class="viewer-panel-text active">
+              <h1 class="feature-title" data-i18n="t1.features.f0.title">Expenses</h1>
+              <p class="feature-desc" data-i18n="t1.hero.sub">T1 Expenses scans, analyzes, and organizes receipts, invoices, and vouchers with the power of artificial intelligence — white-labeled under your own brand.</p>
+            </div>
+            <div class="viewer-panel-text">
+              <h1 class="feature-title" data-i18n="t1.features.f1.title">Full frame scanning</h1>
+              <p class="feature-desc" data-i18n="t1.features.f1.desc">Capture multiple receipts in a row with the Scan menu.</p>
+            </div>
+            <div class="viewer-panel-text">
+              <h1 class="feature-title" data-i18n="t1.features.f2.title">Long receipt scanning</h1>
+              <p class="feature-desc" data-i18n="t1.features.f2.desc">Even endless receipts are split and analyzed automatically with Segments mode.</p>
+            </div>
+            <div class="viewer-panel-text">
+              <h1 class="feature-title" data-i18n="t1.features.f3.title">Manual entry included</h1>
+              <p class="feature-desc" data-i18n="t1.features.f3.desc">Add non-scanned receipts manually so nothing slips through the cracks.</p>
+            </div>
+            <div class="viewer-panel-text">
+              <h1 class="feature-title" data-i18n="t1.features.f4.title">Send by email</h1>
+              <p class="feature-desc" data-i18n="t1.features.f4.desc">Forward PDF expenses received by email to a dedicated you@t1.tomos.io address.</p>
+            </div>
+            <div class="viewer-panel-text">
+              <h1 class="feature-title" data-i18n="t1.features.f5.title">Smart insights</h1>
+              <p class="feature-desc" data-i18n="t1.features.f5.desc">AI highlights spending patterns, detects anomalies, and generates trends.</p>
+            </div>
+            <div class="viewer-panel-text">
+              <h1 class="feature-title" data-i18n="t1.features.f6.title">Search everything</h1>
+              <p class="feature-desc" data-i18n="t1.features.f6.desc">From merchant to line items, search through the contents of every receipt.</p>
+            </div>
+            <div class="viewer-panel-text">
+              <h1 class="feature-title" data-i18n="t1.features.f7.title">Export made simple</h1>
+              <p class="feature-desc" data-i18n="t1.features.f7.desc">Export data instantly and find any item or transaction in seconds.</p>
+            </div>
+
+            <div class="hero-actions">
+              <a href="mailto:contact@tomos.io?subject=Demo%20T1%20Expenses" class="btn-primary" data-i18n="t1.hero.ctaPrimary">Ask for a demo →</a>
+              <a href="index.html#modules" class="btn-secondary" data-i18n="t1.hero.ctaSecondary">Back to modules</a>
+            </div>
+          </div>
+          <div class="feature-viewer-media">
+            <div class="viewer-panel-visual active"><img src="assets/img/logos/header-t1.webp" alt="T1 Expenses" loading="lazy"></div>
+            <div class="viewer-panel-visual"><img src="assets/img/t1/ill-scan.webp" alt="" loading="lazy"></div>
+            <div class="viewer-panel-visual"><img src="assets/img/t1/ill-segments.webp" alt="" loading="lazy"></div>
+            <div class="viewer-panel-visual"><img src="assets/img/t1/ill-manual.webp" alt="" loading="lazy"></div>
+            <div class="viewer-panel-visual"><img src="assets/img/t1/ill-email.webp" alt="" loading="lazy"></div>
+            <div class="viewer-panel-visual"><img src="assets/img/t1/ill-insights.webp" alt="" loading="lazy"></div>
+            <div class="viewer-panel-visual"><img src="assets/img/t1/ill-search.webp" alt="" loading="lazy"></div>
+            <div class="viewer-panel-visual"><img src="assets/img/t1/ill-export.webp" alt="" loading="lazy"></div>
+          </div>
+        </div>
+        <div class="feature-tabs-row">
+          <button class="tab-arrow tab-arrow-left" type="button" aria-label="Previous">&#8249;</button>
+          <div class="feature-tabs">
+            <button class="feature-tab active" type="button"><span data-i18n="t1.features.overview">Overview</span></button>
+            <button class="feature-tab" type="button"><span data-i18n="t1.features.f1.title">Full frame scanning</span></button>
+            <button class="feature-tab" type="button"><span data-i18n="t1.features.f2.title">Long receipt scanning</span></button>
+            <button class="feature-tab" type="button"><span data-i18n="t1.features.f3.title">Manual entry included</span></button>
+            <button class="feature-tab" type="button"><span data-i18n="t1.features.f4.title">Send by email</span></button>
+            <button class="feature-tab" type="button"><span data-i18n="t1.features.f5.title">Smart insights</span></button>
+            <button class="feature-tab" type="button"><span data-i18n="t1.features.f6.title">Search everything</span></button>
+            <button class="feature-tab" type="button"><span data-i18n="t1.features.f7.title">Export made simple</span></button>
+          </div>
+          <button class="tab-arrow tab-arrow-right" type="button" aria-label="Next">&#8250;</button>
+        </div>
       </div>
     </div>
   </div>
-
-  <hr class="section-divider">
-
-  <!-- FEATURES -->
-  <section id="features">
-    <div class="section-intro">
-      <div>
-        <div class="section-label" data-i18n="t1.features.label">Features</div>
-        <h2 data-i18n="t1.features.title">The AI advantage</h2>
-      </div>
-      <p class="section-sub" data-i18n="t1.features.sub">Unlike traditional expense apps, T1 Expenses learns from your habits. The result: your clients save time, reduce errors, and gain crystal-clear financial visibility.</p>
-    </div>
-
-    <div class="feature-tour" style="--node-accent: var(--node-t1)">
-      <div class="feature-viewer">
-        <div class="feature-viewer-text">
-          <div class="viewer-panel-text active">
-            <h3 class="feature-title" data-i18n="t1.features.f1.title">Full frame scanning</h3>
-            <p class="feature-desc" data-i18n="t1.features.f1.desc">Capture multiple receipts in a row with the Scan menu.</p>
-          </div>
-          <div class="viewer-panel-text">
-            <h3 class="feature-title" data-i18n="t1.features.f2.title">Long receipt scanning</h3>
-            <p class="feature-desc" data-i18n="t1.features.f2.desc">Even endless receipts are split and analyzed automatically with Segments mode.</p>
-          </div>
-          <div class="viewer-panel-text">
-            <h3 class="feature-title" data-i18n="t1.features.f3.title">Manual entry included</h3>
-            <p class="feature-desc" data-i18n="t1.features.f3.desc">Add non-scanned receipts manually so nothing slips through the cracks.</p>
-          </div>
-          <div class="viewer-panel-text">
-            <h3 class="feature-title" data-i18n="t1.features.f4.title">Send by email</h3>
-            <p class="feature-desc" data-i18n="t1.features.f4.desc">Forward PDF expenses received by email to a dedicated you@t1.tomos.io address.</p>
-          </div>
-          <div class="viewer-panel-text">
-            <h3 class="feature-title" data-i18n="t1.features.f5.title">Smart insights</h3>
-            <p class="feature-desc" data-i18n="t1.features.f5.desc">AI highlights spending patterns, detects anomalies, and generates trends.</p>
-          </div>
-          <div class="viewer-panel-text">
-            <h3 class="feature-title" data-i18n="t1.features.f6.title">Search everything</h3>
-            <p class="feature-desc" data-i18n="t1.features.f6.desc">From merchant to line items, search through the contents of every receipt.</p>
-          </div>
-          <div class="viewer-panel-text">
-            <h3 class="feature-title" data-i18n="t1.features.f7.title">Export made simple</h3>
-            <p class="feature-desc" data-i18n="t1.features.f7.desc">Export data instantly and find any item or transaction in seconds.</p>
-          </div>
-        </div>
-        <div class="feature-viewer-media">
-          <div class="viewer-panel-visual active"><img src="assets/img/t1/ill-scan.webp" alt="" loading="lazy"></div>
-          <div class="viewer-panel-visual"><img src="assets/img/t1/ill-segments.webp" alt="" loading="lazy"></div>
-          <div class="viewer-panel-visual"><img src="assets/img/t1/ill-manual.webp" alt="" loading="lazy"></div>
-          <div class="viewer-panel-visual"><img src="assets/img/t1/ill-email.webp" alt="" loading="lazy"></div>
-          <div class="viewer-panel-visual"><img src="assets/img/t1/ill-insights.webp" alt="" loading="lazy"></div>
-          <div class="viewer-panel-visual"><img src="assets/img/t1/ill-search.webp" alt="" loading="lazy"></div>
-          <div class="viewer-panel-visual"><img src="assets/img/t1/ill-export.webp" alt="" loading="lazy"></div>
-        </div>
-      </div>
-      <div class="feature-tabs-row">
-        <button class="tab-arrow tab-arrow-left" type="button" aria-label="Previous">&#8249;</button>
-        <div class="feature-tabs">
-          <button class="feature-tab active" type="button"><span data-i18n="t1.features.f1.title">Full frame scanning</span></button>
-          <button class="feature-tab" type="button"><span data-i18n="t1.features.f2.title">Long receipt scanning</span></button>
-          <button class="feature-tab" type="button"><span data-i18n="t1.features.f3.title">Manual entry included</span></button>
-          <button class="feature-tab" type="button"><span data-i18n="t1.features.f4.title">Send by email</span></button>
-          <button class="feature-tab" type="button"><span data-i18n="t1.features.f5.title">Smart insights</span></button>
-          <button class="feature-tab" type="button"><span data-i18n="t1.features.f6.title">Search everything</span></button>
-          <button class="feature-tab" type="button"><span data-i18n="t1.features.f7.title">Export made simple</span></button>
-        </div>
-        <button class="tab-arrow tab-arrow-right" type="button" aria-label="Next">&#8250;</button>
-      </div>
-    </div>
-  </section>
 
   <hr class="section-divider">
 
@@ -268,6 +252,8 @@
             label: "Fonctionnalités",
             title: "L'avantage de l'IA",
             sub: "Contrairement aux apps de notes de frais classiques, T1 Expenses apprend des habitudes de vos clients. Résultat : gain de temps, moins d'erreurs, une visibilité financière limpide.",
+            overview: "Aperçu",
+            f0: { title: "Expenses" },
             f1: { title: "Scan plein cadre", desc: "Capturez plusieurs reçus à la suite avec le menu Scan." },
             f2: { title: "Scan de longs tickets", desc: "Même les tickets interminables sont découpés et analysés automatiquement en mode Segments." },
             f3: { title: "Saisie manuelle incluse", desc: "Ajoutez les reçus non scannés manuellement pour que rien ne vous échappe." },
@@ -327,6 +313,8 @@
             label: "Features",
             title: "The AI advantage",
             sub: "Unlike traditional expense apps, T1 Expenses learns from your clients' habits. The result: time saved, fewer errors, and crystal-clear financial visibility.",
+            overview: "Overview",
+            f0: { title: "Expenses" },
             f1: { title: "Full frame scanning", desc: "Capture multiple receipts in a row with the Scan menu." },
             f2: { title: "Long receipt scanning", desc: "Even endless receipts are split and analyzed automatically with Segments mode." },
             f3: { title: "Manual entry included", desc: "Add non-scanned receipts manually so nothing slips through the cracks." },

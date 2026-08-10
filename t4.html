@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Viga&family=Syne:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=11">
+  <link rel="stylesheet" href="assets/css/style.css?v=13">
 </head>
 <body>
 
@@ -33,93 +33,77 @@
     </div>
   </nav>
 
-  <!-- HERO -->
-  <div class="hero-section">
+  <!-- HERO = FEATURE VIEWER -->
+  <div class="hero-section" id="features">
     <div class="hero">
       <div class="hero-tag">
         <span class="hero-dot"></span>
         T4 · Bot
       </div>
-      <h1 data-i18n="t4.hero.title">Answer your clients<br><span class="muted">with easy AI.</span></h1>
-      <p class="hero-sub" data-i18n="t4.hero.sub">Tomos Bot delivers AI-powered answers to your clients' website visitors, using the knowledge you provide to give accurate, contextual responses instantly — under your own brand.</p>
-      <div class="hero-actions">
-        <a href="mailto:contact@tomos.io?subject=Demo%20T4%20Bot" class="btn-primary" data-i18n="t4.hero.ctaPrimary">Ask to try now →</a>
-        <a href="index.html#modules" class="btn-secondary" data-i18n="t4.hero.ctaSecondary">Back to modules</a>
-      </div>
-      <div class="badge-row">
-        <span class="badge-pill" data-i18n="t4.hero.badge1">500 answers free / month</span>
-        <span class="badge-pill" data-i18n="t4.hero.badge2">Fully customizable persona</span>
-        <span class="badge-pill" data-i18n="t4.hero.badge3">Lead capture built in</span>
-      </div>
-      <div class="hero-media">
-        <img src="assets/img/t4/app-bot.webp" alt="T4 Bot interface" loading="lazy">
+
+      <div class="feature-tour hero-tour" style="--node-accent: var(--node-t4)">
+        <div class="feature-viewer">
+          <div class="feature-viewer-text">
+            <div class="viewer-panel-text active">
+              <h1 class="feature-title" data-i18n="t4.features.f0.title">Bot</h1>
+              <p class="feature-desc" data-i18n="t4.hero.sub">Tomos Bot delivers AI-powered answers to your clients' website visitors, using the knowledge you provide to give accurate, contextual responses instantly — under your own brand.</p>
+            </div>
+            <div class="viewer-panel-text">
+              <h1 class="feature-title" data-i18n="t4.features.f1.title">Design your assistant</h1>
+              <p class="feature-desc" data-i18n="t4.features.f1.desc">Pick an avatar, define a personality, schedule its availability, and choose colors that reflect your brand.</p>
+            </div>
+            <div class="viewer-panel-text">
+              <h1 class="feature-title" data-i18n="t4.features.f2.title">Give your context</h1>
+              <p class="feature-desc" data-i18n="t4.features.f2.desc">You define the context, the knowledge, and the rules it follows — TBot doesn't search the internet, you keep total control.</p>
+            </div>
+            <div class="viewer-panel-text">
+              <h1 class="feature-title" data-i18n="t4.features.f3.title">Track conversations</h1>
+              <p class="feature-desc" data-i18n="t4.features.f3.desc">Every conversation is saved. Track questions, evaluate answers, and evolve the bot's context with real insights.</p>
+            </div>
+            <div class="viewer-panel-text">
+              <h1 class="feature-title" data-i18n="t4.features.f4.title">Trigger answers</h1>
+              <p class="feature-desc" data-i18n="t4.features.f4.desc">Set up keyword triggers and design the reply: text, cards, or buttons — exactly what you planned, no surprises.</p>
+            </div>
+            <div class="viewer-panel-text">
+              <h1 class="feature-title" data-i18n="t4.features.f5.title">Smart lead capture</h1>
+              <p class="feature-desc" data-i18n="t4.features.f5.desc">Collect contact information from prospects during the conversation. You choose the fields, the bot asks, leads are saved.</p>
+            </div>
+            <div class="viewer-panel-text">
+              <h1 class="feature-title" data-i18n="t4.features.f6.title">Edit your AI prompt</h1>
+              <p class="feature-desc" data-i18n="t4.features.f6.desc">With a customizable system prompt, you define the bot's guidelines and internal rules — it follows your directives.</p>
+            </div>
+
+            <div class="hero-actions">
+              <a href="mailto:contact@tomos.io?subject=Demo%20T4%20Bot" class="btn-primary" data-i18n="t4.hero.ctaPrimary">Ask to try now →</a>
+              <a href="index.html#modules" class="btn-secondary" data-i18n="t4.hero.ctaSecondary">Back to modules</a>
+            </div>
+          </div>
+          <div class="feature-viewer-media">
+            <div class="viewer-panel-visual active"><img src="assets/img/t4/app-bot.webp" alt="T4 Bot interface" loading="lazy"></div>
+            <div class="viewer-panel-visual"><img src="assets/img/t4/personnalities.webp" alt="" loading="lazy"></div>
+            <div class="viewer-panel-visual"><img src="assets/img/t4/ill-bot-read.webp" alt="" loading="lazy"></div>
+            <div class="viewer-panel-visual"><img src="assets/img/t4/ecran-t4.webp" alt="" loading="lazy"></div>
+            <div class="viewer-panel-visual"><img src="assets/img/t4/ill-bot-trigger.webp" alt="" loading="lazy"></div>
+            <div class="viewer-panel-visual"><img src="assets/img/t4/ill-bot-leads.webp" alt="" loading="lazy"></div>
+            <div class="viewer-panel-visual"><img src="assets/img/t4/ill-bot-prompt.webp" alt="" loading="lazy"></div>
+          </div>
+        </div>
+        <div class="feature-tabs-row">
+          <button class="tab-arrow tab-arrow-left" type="button" aria-label="Previous">&#8249;</button>
+          <div class="feature-tabs">
+            <button class="feature-tab active" type="button"><span data-i18n="t4.features.overview">Overview</span></button>
+            <button class="feature-tab" type="button"><span data-i18n="t4.features.f1.title">Design your assistant</span></button>
+            <button class="feature-tab" type="button"><span data-i18n="t4.features.f2.title">Give your context</span></button>
+            <button class="feature-tab" type="button"><span data-i18n="t4.features.f3.title">Track conversations</span></button>
+            <button class="feature-tab" type="button"><span data-i18n="t4.features.f4.title">Trigger answers</span></button>
+            <button class="feature-tab" type="button"><span data-i18n="t4.features.f5.title">Smart lead capture</span></button>
+            <button class="feature-tab" type="button"><span data-i18n="t4.features.f6.title">Edit your AI prompt</span></button>
+          </div>
+          <button class="tab-arrow tab-arrow-right" type="button" aria-label="Next">&#8250;</button>
+        </div>
       </div>
     </div>
   </div>
-
-  <hr class="section-divider">
-
-  <!-- FEATURES -->
-  <section id="features">
-    <div class="section-intro">
-      <div>
-        <div class="section-label" data-i18n="t4.features.label">Features</div>
-        <h2 data-i18n="t4.features.title">Fully customizable AI</h2>
-      </div>
-      <p class="section-sub" data-i18n="t4.features.sub">TBot speaks the way your client wants. You define its tone, its knowledge, and its answers — your brand, your rules, your voice.</p>
-    </div>
-
-    <div class="feature-tour" style="--node-accent: var(--node-t4)">
-      <div class="feature-viewer">
-        <div class="feature-viewer-text">
-          <div class="viewer-panel-text active">
-            <h3 class="feature-title" data-i18n="t4.features.f1.title">Design your assistant</h3>
-            <p class="feature-desc" data-i18n="t4.features.f1.desc">Pick an avatar, define a personality, schedule its availability, and choose colors that reflect your brand.</p>
-          </div>
-          <div class="viewer-panel-text">
-            <h3 class="feature-title" data-i18n="t4.features.f2.title">Give your context</h3>
-            <p class="feature-desc" data-i18n="t4.features.f2.desc">You define the context, the knowledge, and the rules it follows — TBot doesn't search the internet, you keep total control.</p>
-          </div>
-          <div class="viewer-panel-text">
-            <h3 class="feature-title" data-i18n="t4.features.f3.title">Track conversations</h3>
-            <p class="feature-desc" data-i18n="t4.features.f3.desc">Every conversation is saved. Track questions, evaluate answers, and evolve the bot's context with real insights.</p>
-          </div>
-          <div class="viewer-panel-text">
-            <h3 class="feature-title" data-i18n="t4.features.f4.title">Trigger answers</h3>
-            <p class="feature-desc" data-i18n="t4.features.f4.desc">Set up keyword triggers and design the reply: text, cards, or buttons — exactly what you planned, no surprises.</p>
-          </div>
-          <div class="viewer-panel-text">
-            <h3 class="feature-title" data-i18n="t4.features.f5.title">Smart lead capture</h3>
-            <p class="feature-desc" data-i18n="t4.features.f5.desc">Collect contact information from prospects during the conversation. You choose the fields, the bot asks, leads are saved.</p>
-          </div>
-          <div class="viewer-panel-text">
-            <h3 class="feature-title" data-i18n="t4.features.f6.title">Edit your AI prompt</h3>
-            <p class="feature-desc" data-i18n="t4.features.f6.desc">With a customizable system prompt, you define the bot's guidelines and internal rules — it follows your directives.</p>
-          </div>
-        </div>
-        <div class="feature-viewer-media">
-          <div class="viewer-panel-visual active"><img src="assets/img/t4/personnalities.webp" alt="" loading="lazy"></div>
-          <div class="viewer-panel-visual"><img src="assets/img/t4/ill-bot-read.webp" alt="" loading="lazy"></div>
-          <div class="viewer-panel-visual"><img src="assets/img/t4/ecran-t4.webp" alt="" loading="lazy"></div>
-          <div class="viewer-panel-visual"><img src="assets/img/t4/ill-bot-trigger.webp" alt="" loading="lazy"></div>
-          <div class="viewer-panel-visual"><img src="assets/img/t4/ill-bot-leads.webp" alt="" loading="lazy"></div>
-          <div class="viewer-panel-visual"><img src="assets/img/t4/ill-bot-prompt.webp" alt="" loading="lazy"></div>
-        </div>
-      </div>
-      <div class="feature-tabs-row">
-        <button class="tab-arrow tab-arrow-left" type="button" aria-label="Previous">&#8249;</button>
-        <div class="feature-tabs">
-          <button class="feature-tab active" type="button"><span data-i18n="t4.features.f1.title">Design your assistant</span></button>
-          <button class="feature-tab" type="button"><span data-i18n="t4.features.f2.title">Give your context</span></button>
-          <button class="feature-tab" type="button"><span data-i18n="t4.features.f3.title">Track conversations</span></button>
-          <button class="feature-tab" type="button"><span data-i18n="t4.features.f4.title">Trigger answers</span></button>
-          <button class="feature-tab" type="button"><span data-i18n="t4.features.f5.title">Smart lead capture</span></button>
-          <button class="feature-tab" type="button"><span data-i18n="t4.features.f6.title">Edit your AI prompt</span></button>
-        </div>
-        <button class="tab-arrow tab-arrow-right" type="button" aria-label="Next">&#8250;</button>
-      </div>
-    </div>
-  </section>
 
   <hr class="section-divider">
 
@@ -246,6 +230,8 @@
             label: "Fonctionnalités",
             title: "Une IA entièrement personnalisable",
             sub: "TBot parle comme votre client le souhaite. Vous définissez son ton, ses connaissances et ses réponses — votre marque, vos règles, votre voix.",
+            overview: "Aperçu",
+            f0: { title: "Bot" },
             f1: { title: "Concevez votre assistant", desc: "Choisissez un avatar, définissez une personnalité, programmez sa disponibilité, et choisissez des couleurs qui reflètent votre marque." },
             f2: { title: "Donnez-lui son contexte", desc: "Vous définissez le contexte, les connaissances et les règles qu'il suit — TBot ne cherche pas sur internet, vous gardez le contrôle total." },
             f3: { title: "Suivez les conversations", desc: "Chaque conversation est enregistrée. Suivez les questions, évaluez les réponses et faites évoluer le contexte du bot." },
@@ -300,6 +286,8 @@
             label: "Features",
             title: "Fully customizable AI",
             sub: "TBot speaks the way your client wants. You define its tone, its knowledge, and its answers — your brand, your rules, your voice.",
+            overview: "Overview",
+            f0: { title: "Bot" },
             f1: { title: "Design your assistant", desc: "Pick an avatar, define a personality, schedule its availability, and choose colors that reflect your brand." },
             f2: { title: "Give your context", desc: "You define the context, the knowledge, and the rules it follows — TBot doesn't search the internet, you keep total control." },
             f3: { title: "Track conversations", desc: "Every conversation is saved. Track questions, evaluate answers, and evolve the bot's context with real insights." },

@@ -907,6 +907,41 @@ footer {
   min-height: 340px;
 }
 
+/* Hero-integrated variant — the viewer IS the hero, no separate card */
+.hero-tour { margin-top: 2.5rem; }
+
+.hero-tour .feature-viewer {
+  background: transparent;
+  border: none;
+  padding: 0;
+  min-height: auto;
+}
+
+.hero-tour .viewer-panel-text .feature-title {
+  font-family: 'Viga', 'Helvetica Neue', Arial, sans-serif;
+  font-size: clamp(38px, 6vw, 60px);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -1px;
+  max-width: 640px;
+  margin-bottom: 1.25rem;
+}
+
+.hero-tour .viewer-panel-text .feature-desc {
+  font-size: 18px;
+  color: var(--mid-gray);
+  max-width: 480px;
+  line-height: 1.65;
+  font-weight: 300;
+}
+
+.hero-tour .feature-viewer-text .hero-actions {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.hero-tour .feature-viewer-media { aspect-ratio: 4 / 3; }
+
 .feature-viewer-text { position: relative; }
 
 .viewer-panel-text { display: none; }
