@@ -457,11 +457,18 @@ h3 {
 }
 
 .module-title, .feature-title {
-  font-family: var(--font-display);
   font-size: 22px;
   font-weight: 400;
   letter-spacing: -0.5px;
   margin-bottom: 0.5rem;
+}
+
+.module-title {
+  font-family: 'DM Sans', var(--font-display);
+}
+
+.feature-title {
+  font-family: var(--font-display);
 }
 
 .feature-title { font-size: 17px; }
