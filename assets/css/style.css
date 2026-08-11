@@ -213,7 +213,7 @@ h1 {
   letter-spacing: -1.5px;
   max-width: 720px;
   margin-bottom: 1.5rem;
-  background: linear-gradient(120deg, #0d0d0d 0%, #333333 35%, #8a8a8a 70%, #bcbcbc 100%);
+  background: linear-gradient(180deg, #0d0d0d 0%, #333333 35%, #8a8a8a 70%, #bcbcbc 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
