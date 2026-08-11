@@ -17,7 +17,7 @@
   --border-light: rgba(0,0,0,0.06);
   --accent-from: #707070;
   --accent-to: #212020;
-  --font-display: 'Syne', sans-serif;
+  --font-display: Arial, sans-serif;
   --font-body: 'DM Sans', sans-serif;
 
   /* Node-diagram accent system */
@@ -441,7 +441,7 @@ h3 {
   display: inline-block;
   font-family: var(--font-display);
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 1px;
   color: var(--mid-gray);
   background: var(--pale);
@@ -454,7 +454,7 @@ h3 {
 .module-title, .feature-title {
   font-family: var(--font-display);
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: -0.5px;
   margin-bottom: 0.5rem;
 }
@@ -590,7 +590,7 @@ h3 {
 .proof-name {
   font-family: var(--font-display);
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: -1px;
   margin-bottom: 0.75rem;
 }
@@ -667,9 +667,9 @@ h3 {
   border-radius: 20px;
 }
 
-.price-plan { font-family: var(--font-display); font-size: 18px; font-weight: 700; margin-bottom: 0.4rem; }
+.price-plan { font-family: var(--font-display); font-size: 18px; font-weight: 400; margin-bottom: 0.4rem; }
 .price-tagline { font-size: 13px; color: var(--mid-gray); margin-bottom: 1.25rem; font-weight: 300; }
-.price-amount { font-family: var(--font-display); font-size: 34px; font-weight: 700; letter-spacing: -1px; }
+.price-amount { font-family: var(--font-display); font-size: 34px; font-weight: 400; letter-spacing: -1px; }
 .price-period { font-size: 13px; color: var(--mid-gray); font-weight: 400; }
 .price-features { list-style: none; margin: 1.5rem 0; display: flex; flex-direction: column; gap: 8px; }
 .price-features li { font-size: 13px; color: var(--mid-gray); display: flex; align-items: center; gap: 8px; }
@@ -890,7 +890,7 @@ footer {
   fill: var(--black);
   stroke: var(--black);
 }
-.node-diagram .output-title { fill: var(--white); font-weight: 700; font-family: var(--font-display); }
+.node-diagram .output-title { fill: var(--white); font-weight: 400; font-family: var(--font-display); }
 
 /* FEATURE TOUR — card strip (bottom) + viewer (top), Chrome "What's new"-style */
 .feature-tour { margin-top: 2.5rem; }
