@@ -202,8 +202,9 @@ nav.scrolled {
 
 .hero-logo {
   display: block;
-  height: 40px;
-  width: auto;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
   margin-bottom: 2rem;
 }
 
@@ -1117,4 +1118,5 @@ footer {
   h1 { letter-spacing: -1px; }
   section, .hero { padding-left: 1.25rem; padding-right: 1.25rem; }
   .hero-tour .feature-viewer-media { height: 260px; }
+  .hero-logo { max-width: 140px; }
 }
