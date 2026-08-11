@@ -200,6 +200,13 @@ nav.scrolled {
   margin-bottom: 2rem;
 }
 
+.hero-logo {
+  display: block;
+  height: 40px;
+  width: auto;
+  margin-bottom: 2rem;
+}
+
 .hero-dot {
   width: 6px;
   height: 6px;
@@ -961,47 +968,6 @@ footer {
 }
 
 .hero-tour .viewer-panel-visual img { object-fit: contain; }
-
-/* Overview slide — full-width viewer, text overlaid on top */
-.hero-tour.is-overview .feature-viewer {
-  display: block;
-  position: relative;
-}
-
-.hero-tour.is-overview .feature-viewer-media {
-  width: 100%;
-  border-radius: 20px;
-}
-
-.hero-tour.is-overview .feature-viewer-text {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 2.5rem;
-  border-radius: 20px;
-  background: linear-gradient(180deg, rgba(0,0,0,0) 35%, rgba(0,0,0,0.7) 100%);
-}
-
-.hero-tour.is-overview .viewer-panel-text .feature-title {
-  background: none;
-  -webkit-background-clip: initial;
-  background-clip: initial;
-  color: #fff;
-  -webkit-text-fill-color: #fff;
-}
-
-.hero-tour.is-overview .viewer-panel-text .feature-desc { color: rgba(255,255,255,0.85); }
-
-.hero-tour.is-overview .hero-actions .btn-secondary {
-  background: rgba(255,255,255,0.12);
-  border-color: rgba(255,255,255,0.5);
-  color: #fff;
-}
-
-.hero-tour.is-overview .hero-actions .btn-secondary:hover { background: rgba(255,255,255,0.22); }
 
 .feature-viewer-text { position: relative; }
 
