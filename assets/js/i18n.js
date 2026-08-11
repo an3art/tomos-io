@@ -86,6 +86,7 @@
         tabs.forEach(function (t, i) { t.classList.toggle('active', i === index); });
         textPanels.forEach(function (p, i) { p.classList.toggle('active', i === index); });
         visualPanels.forEach(function (p, i) { p.classList.toggle('active', i === index); });
+        tour.classList.toggle('is-overview', index === 0);
       };
 
       tabs.forEach(function (tab, i) {
@@ -94,6 +95,10 @@
           tab.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
         });
       });
+
+      var initialIndex = 0;
+      textPanels.forEach(function (p, i) { if (p.classList.contains('active')) initialIndex = i; });
+      tour.classList.toggle('is-overview', initialIndex === 0);
 
       if (leftArrow) leftArrow.addEventListener('click', function () { tabsRow.scrollBy({ left: -240, behavior: 'smooth' }); });
       if (rightArrow) rightArrow.addEventListener('click', function () { tabsRow.scrollBy({ left: 240, behavior: 'smooth' }); });
